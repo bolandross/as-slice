@@ -4,7 +4,7 @@
 //! polymorphic (no input type parameter) and their methods always return slices (`[T]`).
 //!
 //! The main use case of these traits is writing generic code that accepts (fixed size) buffers. For
-//! example, a bound `T: StableDeref + AsMutSlice<Element = u8> + 'static` will accepts types like
+//! example, a bound `T: StableDeref + AsMutSlice<Element = u8> + 'static` will accept types like
 //! `&'static mut [u8]` and `&'static mut [u8; 128]` -- all
 //! of them are appropriate for DMA transfers.
 //!
